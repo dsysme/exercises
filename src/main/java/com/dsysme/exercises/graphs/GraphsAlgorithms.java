@@ -22,6 +22,12 @@ public class GraphsAlgorithms {
         }
     }
 
+    /**
+     * throws exception if graph contains cycles
+     * @param accumulator
+     * @param root
+     * @param graph
+     */
     private static void getDFSForAsyclicConnectedGraph(List<Integer> accumulator, int root, Map<Integer, List<Integer>> graph) {
         if (graph.isEmpty()) {
             return;
